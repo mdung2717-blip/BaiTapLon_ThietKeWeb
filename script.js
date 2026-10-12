@@ -14,7 +14,7 @@ if (slides.length > 0) {
       slide.classList.toggle('active', slideIndex === currentIndex);
     });
   }
-
+  showSlide(currentIndex);
   previousButton?.addEventListener('click', () => showSlide(currentIndex - 1, -1));
   nextButton?.addEventListener('click', () => showSlide(currentIndex + 1, 1));
 
