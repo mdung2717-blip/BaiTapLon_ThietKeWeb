@@ -79,9 +79,9 @@ button {
 }
 
 .avatar img {
-  width: 100%;
+  width: 50%;
   height: 100%;
-  object-fit: cover;
+
 }
 
 .brand-btn {
@@ -625,4 +625,81 @@ button {
     height: 42px;
     font-size: 2rem;
   }
+}
+
+/* Banner chứa slider */
+.hero.slider {
+    position: relative;
+    display: block;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background: #f2d66e;
+}
+
+/* Khung chứa 3 ảnh */
+.slider-track {
+    position: relative;
+    width: 100%;
+    min-height: 0;
+}
+
+/* Mặc định ẩn ảnh */
+.slide {
+    display: none;
+    width: 100%;
+    padding: 0;
+    min-height: 0;
+}
+
+/* Chỉ hiện ảnh đang được chọn */
+.slide.active {
+    display: block;
+}
+
+/* Ảnh chiếm toàn bộ chiều rộng banner */
+.slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Hai nút điều hướng */
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 98, 98, 0.92);
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.slider-arrow.left {
+    left: 20px;
+}
+
+.slider-arrow.right {
+    right: 20px;
+}
+
+@media (max-width: 600px) {
+    .slider-arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+
+    .slider-arrow.left {
+        left: 8px;
+    }
+
+    .slider-arrow.right {
+        right: 8px;
+    }
 }

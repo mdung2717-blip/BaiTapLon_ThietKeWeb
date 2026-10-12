@@ -3,56 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BaiTapLonThietKeWeb</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="a.css">
 </head>
 <body>
-    <div class="master-wrapper-page">
-        <!--This is begin of header-->
-        <header>
-            <div class="higher-header">
-                <a href="index.html"><img class="header-logo"
-                    src="./assets/images/BuiThiNgocPhuong_251230944/header_image/page_logo.png" alt="page logo"></a>
-            </div>
-            <div class="">
-
-            </div>
-
-        </header>
-
+    <header>
+        <!--Logo và nút trang chủ-->
+        <div class="logo-area">
+            <img src="page-logo.png" alt="Logo">
+            <button>Trang chủ</button>
         </div>
 
+        <!--Menu chính-->
+        <nav class="menu">
+            <a href="#">MENU</a>
+            <a href="#">KHUYẾN MÃI</a>
+            <a href="#">TIN TỨC</a>
+        </nav>
 
-        <footer> 
-        <!--this is begin of footer-->
-            <div class="footer-wrapper">
-                <div class="footer-about">
-                    <img src="assets/images/BuiThiNgocPhuong_251230944/header_image/page_logo.png" alt="Chicken Logo"
-                        class="footer-logo"/>
-                    <div class="footer-hottline">
-                        <p><strong>Tổng đài hỗ trợ:</strong></p>
-                        <p>
-                           Mua hàng: <a href="tel:19006626">1234.6789</a> (08:00 - 22:00)
-                        </p>
-                        <p>
-                           Bảo hành: <a href="tel:19008036">0123.1111</a> (08:30 - 20:00)
-                        </p>
-                    </div>
+        <!--Tìm kiếm và nút chức năng-->
+        <div class="user-actions">
+            <input type="text" placeholder="Tìm món ăn,combo...">
+            <button class="btn-cart">🛒 Giỏ hàng</button>
+            <button class="btn-login">Đăng nhập</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner-slide">
+            <button class="slider-arrow left" type="button" aria-label="Ảnh trước">&lt;</button>
+
+            <div class="slide-track">
+                <div class="slide active">
+                    <img src="assets/images/NguyenThuyDuong_251230832/Thư mục mới/2b1bd7cd-0207-45e8-986d-f7840a89b9d7.jpg" alt="Món ăn nổi bật">
                 </div>
- 
-            <div class="footer-bottom">
-                <p>
-                    © 2026 Nhóm BTL Thiết Kế Web Lớp N05 CNTT3 K66, Trường Đại Học Giao
-                    Thông Vận Tải
-                </p>
-                <p>
-                    Địa chỉ: Số 3, phường Láng Thượng, quận Đống Đa, Hà Nội, Việt Nam
-                </p>
-                <p>Đại diện nhóm trưởng: </p>
-                <p>Email: </p>
-      </div>
-    </footer>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=1400&q=80" alt="Gà rán giòn">
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1400&q=80" alt="Cơm gà">
+                </div>
+            </div>
+
+            <button class="slider-arrow right" type="button" aria-label="Ảnh tiếp theo">&gt;</button>
+
+        </section>
+        <!-- 3. PHẦN CÁC TÍNH NĂNG / DỊCH VỤ -->
+        <section class="features">
+        <div class="feature-box">
+            <span>🚚</span>
+            <div>
+                <h4>Giao hàng nhanh</h4>
+                <p>Trong 30 phút</p>
+            </div>
+        </div>
+        <div class="feature-box">
+            <span>✓</span>
+            <div>
+                <h4>Thực phẩm an toàn</h4>
+                <p>100% tươi sạch</p>
+            </div>
+        </div>
+        <div class="feature-box">
+            <span>✦</span>
+            <div>
+                <h4>Ưu đãi hấp dẫn</h4>
+                <p>Món ngon mỗi ngày</p>
+            </div>
+        </div>
+        <div class="feature-box">
+            <span>☎</span>
+            <div>
+                <h4>Hỗ trợ 24/7</h4>
+                <p>Luôn sẵn sàng</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PHẦN DANH SÁCH MÓN ĂN (BEST SELLER) -->
+    <section class="products">
+        <h2>🔥 Best Seller - Món Ăn Nổi Bật</h2>
         
-    </div>
-    
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=500&q=80" alt="Gà rán">
+                <h3>Gà rán giòn</h3>
+                <p>Gà rán tẩm ướp đậm đà, giòn rụm.</p>
+                <div class="card-bottom">
+                    <strong>69.000 đ</strong>
+                    <button>Đặt hàng</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80" alt="Cơm gà">
+                <h3>Cặp đôi ăn ý</h3>
+                <p></p>
+                <div class="card-bottom">
+                    <strong>59.000 đ</strong>
+                    <button>Đặt hàng</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=500&q=80" alt="Mì ý">
+                <h3>Mì ý sốt bò bằm</h3>
+                <p>Sợi mì dai ngon hòa quyện cùng sốt bò.</p>
+                <div class="card-bottom">
+                    <strong>49.000 đ</strong>
+                    <button>Đặt hàng</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
